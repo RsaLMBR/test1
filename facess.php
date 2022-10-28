@@ -4,9 +4,9 @@
 <?php hint("will include the arg specified in the GET parameter \"page\""); ?>
 
 <form action="/LFI-1/index.php" method="GET">
-    <input type="text" name="page">
+    <input type="text" name="paged">
 </form>
 
 <?php
-include($_GET["page"]);
+include($_GET["paged"]);
 ?>
