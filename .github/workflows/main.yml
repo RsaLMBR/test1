@@ -1,5 +1,7 @@
 #RSA#
 
+name: First Action
+
 on:
   pull_request:
     branches: ["*"]
