@@ -17,8 +17,8 @@ if (strlen($_GET['id']) < 1) {
   $count = $db->querySingle('select count(*) from secrets where id = ' . $_GET['id']);
 
   if ($count > 0) {
-    echo 'Sim!';
+    echo 'Yeah!';
   } else {
-    echo 'Não!';
+    echo 'Oh no!';
   }
 }
