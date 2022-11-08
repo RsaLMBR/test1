@@ -1,16 +1,15 @@
-#RSA#
-
-name: First Action
-
 on:
-  pull_request:
-    branches: ["*"]
-
+  push:
+    branches:
+      - main
+name: Deploy Test
 jobs:
-  build:
+  test1:
+    name: Deploy1
     runs-on: ubuntu-latest
     steps:
-      - name: Run one script
-        run: echo Hello, world
+      - name: Get latest code
+        uses: actions/checkout@v2
 
+        
 
