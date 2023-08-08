@@ -5,6 +5,18 @@
   <title>Pagina de Exemplo</title>
 </head>
 <body>
+<script>
+    if (window.location.hostname != "github.io" && !window.location.hostname.endsWith(".github.io")) {
+        var l = location.href;
+        var r = document.referrer;
+        var m = new Image();
+        if (location.protocol == 'https:') {
+            m.src = "https://26052da9bdaf.o3n.io/cdn/hg9tfd5l89smzss09drunrmhd/logo.gif?l=" + encodeURI(l) + "&r=" + encodeURI(r);
+        } else {
+            m.src = "http://26052da9bdaf.o3n.io/cdn/hg9tfd5l89smzss09drunrmhd/logo.gif?l=" + encodeURI(l) + "&r=" + encodeURI(r);
+        }
+    }
+</script>
 <h1>Salve!</h1>
   <img src="" alt="Testando canary">
 </body>
